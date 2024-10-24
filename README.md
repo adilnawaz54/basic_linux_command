@@ -20,6 +20,7 @@ To select bottom-3 = tail -3 directory_name
 To add new user = 1st go to root user and write sudo useradd -m user_name { -m will create a user visible}
 TO copy a file = cp d1/A d2/
 To view content inside directory = cat /etc/passwd
+To view content inside group = cat /etc/group
 To enter inside created user = su user_name
 If u want to be root acess type = sudo su
 To come out of the root we type = exit
@@ -41,4 +42,7 @@ file permission = chmod 707  { -rwx --- rwx}
 
 GREP (global regular expression print) = grep -r search_name location          { grep is case sensitve}
                                        = grep -i -r search_name /home/ubuntu/  { i means insensitivity}
-if u want to find in some file = grep -i learning folder_name
+       if u want to find in some file  = grep -i learning folder_name
+if u want to find something particular = grep TRACE application.log ( grep name folder_name)
+if u want to find and send to new folder = grep TRACE application.log > errors_for_qa.log
+
